@@ -1,9 +1,8 @@
 FactoryGirl.define do
   factory :order_item do
-    name "MyString"
-price "9.99"
-special_requests ""
-order nil
+    name Faker::Commerce.product_name
+    price Faker::Commerce.price
+    special_requests Faker::Lorem.sentence
+    order
   end
-
 end

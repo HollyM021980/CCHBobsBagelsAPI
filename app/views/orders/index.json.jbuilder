@@ -6,7 +6,7 @@ json.orders @orders do |order|
   json.state order.state
   json.zipcode order.zipcode
   json.phone order.phone
-  json.order_items order.order_items do |order_item|
+  json.order_items order.order_items.includes(:order_item_options) do |order_item|
     json.id order_item.id
     json.name order_item.name
     json.price order_item.price

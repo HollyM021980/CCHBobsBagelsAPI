@@ -1,5 +1,5 @@
 describe "User API" do
-  it '#index all users' do
+  xit '#index all users' do
     FactoryGirl.create_list(:user, 10)
     get '/users'
     expect(response).to be_success            # test for the 200 status-code
@@ -7,7 +7,7 @@ describe "User API" do
     expect(json.length).to eq(10) # check to make sure the right amount of messages are returned
   end
 
-  it 'retrieves a specific user' do
+  xit 'retrieves a specific user' do
     user = FactoryGirl.create(:user)
     get "/users/#{user.id}.json"
 

@@ -6,9 +6,9 @@ class CreateOrders < ActiveRecord::Migration
       t.string :city
       t.string :state
       t.string :zipcode
-      t.string :phone
-      t.string :access_token
-      t.string :name
+      t.string :phone, null: false
+      t.string :access_token, :null, false
+      t.string :name, null: false
       t.belongs_to :user
 
       t.timestamps null: false
