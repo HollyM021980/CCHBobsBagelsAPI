@@ -10,6 +10,9 @@ gem 'pg'
 gem 'rack-cors', require: 'rack/cors'
 gem 'responders', '~> 2.0'
 
+# Add New Relic
+gem 'newrelic_rpm'
+
 group :production do
   gem 'rails_12factor', group: :production
 end
