@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '2.1.2'
 
 gem 'rails', '4.2.0.beta2'
 gem 'stripe-rails'
@@ -6,7 +7,8 @@ gem 'rails-api'
 gem 'jbuilder'
 gem 'bcrypt', '~> 3.1.2'
 gem 'pg'
-gem 'rack-cors', :require => 'rack/cors'
+gem 'rack-cors', require: 'rack/cors'
+gem 'responders', '~> 2.0'
 
 group :production do
   gem 'rails_12factor', group: :production
