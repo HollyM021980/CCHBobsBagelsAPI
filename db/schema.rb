@@ -76,9 +76,11 @@ ActiveRecord::Schema.define(version: 20141111164329) do
     t.string   "city"
     t.string   "state"
     t.string   "zipcode"
-    t.string   "phone"
+    t.string   "phone",                                null: false
     t.string   "access_token"
-    t.string   "name"
+    t.string   "null"
+    t.string   "false"
+    t.string   "name",                                 null: false
     t.integer  "user_id"
     t.datetime "created_at",                           null: false
     t.datetime "updated_at",                           null: false

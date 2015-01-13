@@ -9,6 +9,7 @@ gem 'bcrypt', '~> 3.1.2'
 gem 'pg'
 gem 'rack-cors', require: 'rack/cors'
 gem 'responders', '~> 2.0'
+gem 'arel', '6.0.0.beta2'
 
 # Add New Relic
 gem 'newrelic_rpm'
