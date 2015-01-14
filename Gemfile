@@ -10,6 +10,7 @@ gem 'pg'
 gem 'rack-cors', require: 'rack/cors'
 gem 'responders', '~> 2.0'
 gem 'arel', '6.0.0.beta2'
+gem 'unicorn'
 
 # Add New Relic
 gem 'newrelic_rpm'

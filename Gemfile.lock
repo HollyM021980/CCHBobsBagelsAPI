@@ -69,6 +69,7 @@ GEM
       activesupport (>= 3.0.0, < 5)
       multi_json (~> 1.2)
     json (1.8.2)
+    kgio (2.9.2)
     loofah (2.0.1)
       nokogiri (>= 1.5.9)
     mail (2.6.3)
@@ -128,6 +129,7 @@ GEM
       activesupport (= 4.2.0.beta2)
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
+    raindrops (0.13.0)
     rake (10.4.2)
     responders (2.0.2)
       railties (>= 4.2.0.alpha, < 5)
@@ -175,6 +177,10 @@ GEM
     tilt (1.4.1)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
+    unicorn (4.8.3)
+      kgio (~> 2.6)
+      rack
+      raindrops (~> 0.7)
     uniform_notifier (1.6.2)
 
 PLATFORMS
@@ -201,3 +207,4 @@ DEPENDENCIES
   shoulda-matchers
   spring
   stripe-rails
+  unicorn
